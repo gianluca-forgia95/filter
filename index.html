@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Filter Image</title>
+</head>
+<body>
+<div class="wrapper-image">
+    <h1>FORZA AZZURRI!!!</h1>
+    <div class="img-container" id="img_div">
+    </div>
+    <div class="container">
+             <div class="filter_input">
+                <label>Grayscale</label>
+                <input id="grayscale" type="range" min="0" max="100" value="0" onclick="setFilters(this.name)">
+             </div>
+             <div class="filter_input">
+                <label>Saturate</label>
+                <input id="saturate" type="range"  min="0" max="100" value="88" onclick="setFilters(this.name)">
+             </div>
+
+             <div class="filter_input">
+                <label>Sepia</label>
+                <input id="sepia" type="range"  min="0" max="100" value="0" onclick="setFilters(this.name)">
+             </div>
+             <div class="filter_input">
+                <label>Invert</label>
+                <input id="invert" type="range"  min="0" max="100" value="0" onclick="setFilters(this.name)">
+             </div>
+             <div class="filter_input">
+                <label>Contrast</label>
+                <input id="contrast" type="range"  min="0" max="100" value="83" onclick="setFilters(this.name)">
+            </div>
+            <div class="filter_input">
+                <label>Brightness</label>
+                <input id="brightness" type="range"  min="0" max="100" value="90" onclick="setFilters(this.name)">
+            </div>
+            <div class="filter_input">
+                <label>Blur</label>
+                <input id="blur" type="range"  min="0" max="5" value="0" onclick="setFilters(this.name)">
+             </div>
+             <div class="filter_input">
+                <label>Hue Rotate</label>
+                <input id="hue-rotate" type="range"  min="0" max="360" value="0" onclick="setFilters(this.name)">
+             </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
